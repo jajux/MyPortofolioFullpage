@@ -43,8 +43,8 @@ body{
 }
 h1,
 h2,
-h3,
-h4{
+h3
+{
     font-family: "murberrynormal";
     font-weight: 600;
 }
@@ -70,7 +70,7 @@ img{
     }
 }
 
-/* Header  👦*/
+/* ------------------Header 👦-------------------*/
 .header{
     position: relative;
     width: 100%;
@@ -87,7 +87,7 @@ img{
     width:85rem;
     z-index: -1;
 }
-/* Responsive header  👦*/
+/* ------------------Responsive header 👦------------------*/
 /* -------💻--------- */
 @media only screen and (max-width: 996px){
     .header {
@@ -98,7 +98,7 @@ img{
         width: 50rem;
     }
 }
-/* -----📟----- */
+/* -----------------------📟----------------- */
 @media only screen and (max-width: 768px){
     .header img{
         width: 40rem;
@@ -168,7 +168,7 @@ img{
     color: whitesmoke;
 }
 
-/* Hamburger 🍔 */
+/* ------------------Hamburger 🍔------------------ */
 .top-nav, .hamburger{
     display: none;
 }
@@ -244,3 +244,109 @@ img{
         }
 }
 
+/* -------------------------Hero 🧝‍♂️------------------------- */
+.hero{
+    position: absolute;
+    top: 50%;
+    transform: translate(30%, -50%);
+}
+
+.hero h3{
+    font-family: var(--font-family-p);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero h1{
+    font-size: 6rem;
+}
+
+.hero h3{
+    font-size: 2rem;
+}
+
+.hero h4 span{
+    color: var(--color-title-secondary);
+    text-decoration: underline;
+}
+
+.hero a:link,
+.hero a:visited {
+ display: inline-block;
+ padding: 0.8rem 2.5rem;
+ border: 1px solid var(--color-title-secondary);
+ background-color: var(--color-title-secondary);
+ color: whitesmoke;
+ margin-top: 2rem;
+}
+
+.hero a:hover {
+    background-color: transparent;
+    color: var(--color-title-secondary);
+    font-weight: bold;
+   }
+
+/* ---------------------Responsive hero 🧝‍♂️--------------------- */
+@media only screen and (max-width: 996px) {
+    .hero {
+    transform: translate(10%, -50%);
+    }
+   }
+    
+   @media only screen and (max-width: 768px) {
+    .hero h1 {
+    font-size: 4rem;
+    }
+   }
+    
+   @media only screen and (max-width: 567px) {
+    .hero {
+    top: 35%;
+    transform: translate(10%, -50%);
+    }
+    
+    .hero h3 {
+    font-size: 1.6rem;
+    }
+    
+    .hero h1 {
+    font-size: 3rem;
+    }
+    
+    .hero h4 {
+    font-size: 1.6rem;
+    }
+   }
+    
+   .icons {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: var(--color-title-secondary);
+   }
+    
+   .icons span:not(:last-child) {
+    margin-right: 1rem;
+   }
+    
+   .icons span {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+   }
+    
+   .icons span:hover {
+    color: var(--customColor);
+   }
+    
+   @media only screen and (max-width: 567px) {
+    .icons {
+    display: none;
+    }
+   }
+
+ /* --------Section page mon profil🤷---------  */
+ .section{
+     padding: 5rem 0 7rem 0;
+     overflow-x: hidden;
+ }
