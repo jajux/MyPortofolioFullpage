@@ -21,8 +21,8 @@
 <body>
     <div id="fullpage">
         <!-- Header 👦 -->
-        <div class="section">
-            <header id="home" class="header">
+        <div class="section home">
+            <header id="id-home" class="header">
                 <!-- -----------------------------Navigation 🚀----------------------------- -->
                 <nav class="nav">
                     <div class="container navigation">
@@ -80,37 +80,47 @@
             </header>
         </div>
 
-
         <!-- Section page mon profil🤷 -->
-        <div class="section about" id="about">
+        <div class="section about-me" id="id-about">
             <div class="title">
                 <h1>About me</h1>
             </div>
 
             <div class="about-center container">
                 <div class="left">
-                    <img src="./resources/images/about-5-exemple.png" alt="photo de jawad a propos">
+                    <img src="./resources/images/about-2-exemple.png" alt="photo de jawad a propos">
                 </div>
 
                 <div class="right">
                     <h1>I'm Jawad a <span id="type2"></span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium molestiae molestias
+                        neque aspernatur quis voluptas natus eligendi rem, reprehenderit veritatis totam incidunt quod,
+                        commodi illum repudiandae ad amet enim. Ex ut numquam mollitia itaque vero eos assumenda
+                        doloribus eligendi tenetur architecto, nobis omnis perferendis vel minima hic harum dolorum
+                        soluta. Eius magnam, dignissimos beatae illum ex autem tempora corporis?</p>
+                    <a href="#" class="btn">Téléchargez mon CV</a>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis dolorem quis, repellendus illo nostrum optio a atque eum, cupiditate aspernatur fugiat voluptatibus quas ex consequatur maiores voluptas ab. Ex?</p>
-                <a href="" class="btn">Téléchargez mon CV</a>
             </div>
 
         </div>
 
         <!-- Section/Slide Compétences & portfolio -->
         <div class="section">
-            <div class="slide">Compétences</div>
-            <div class="slide">Portfolio</div>
-        </div>
 
+            <div class="slide slide-skills" id="id-skills">
+
+            </div>
+
+            <div class="slide">
+                <h1>Services</h1>
+            </div>
+        </div>
         <!-- Section page Contact -->
         <div class="section">Contact</div>
     </div>
-    <script src="js/fullpage.min.js"></script>
+
+    <!-- ------------------Script📑------------------ -->
+    <script src="./js/fullpage.min.js"></script>
     <script type="text/javascript">
         new fullpage('#fullpage', {
             licenseKey: 'E71F9B24-FBC54CBA-8281A3EC-343FA672',
@@ -125,8 +135,9 @@
             },
         });
     </script>
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </body>
 
 </html>
