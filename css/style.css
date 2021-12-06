@@ -1,10 +1,10 @@
-/* Setup General */
+/* Global */
 :root{
     --color-primary: #030e1a;
     --color-secondary: #2c3e50;
     --color-tertiary: #f6f6f6;
     --font-family-h: font-family: "murberrynormal";
-    --font-family-p:   font-family: "Josefin Sans", sans-serif;
+    --font-family-p:   font-family: "murberrynorma";
 }
 /* font face murberry */
 @font-face {
@@ -49,9 +49,7 @@ li{
 a{
     text-decoration: none;
 }
-img{
-    max-width: 100%;
-}
+
 .logo-title{
     font-family: var(--font-family-h);
 }
@@ -79,7 +77,7 @@ img{
     position: absolute;
     bottom: 0;
     right: -5%;
-    width:85rem;
+    width:60rem;
     z-index: -1;
 }
 /* ------------------Responsive header 👦------------------*/
@@ -88,12 +86,15 @@ img{
     .header {
         min-height: 60vh;
     }
+    .hero h1{
+        font-size: 4.7rem !important;
+        line-height: 6rem;
+    }
     .header img{
         right: -10%;
         width: 50rem;
     }
 }
-/* -----------------------📟----------------- */
 @media only screen and (max-width: 768px){
     .header img{
         width: 40rem;
@@ -167,7 +168,7 @@ img{
     display: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1300px){
     .menu{
         position: fixed;
         top: 0;
@@ -253,6 +254,7 @@ img{
 
 .hero h1{
     font-size: 6rem;
+    line-height: 7rem;
 }
 
 .hero h3{
@@ -267,7 +269,7 @@ img{
 .hero a:link,
 .hero a:visited {
  display: inline-block;
- padding: 0.8rem 2.5rem;
+ padding: 0.8rem 1rem;
  border: 1px solid var(--color-secondary);
  background-color: var(--color-secondary);
  color: whitesmoke;
@@ -282,9 +284,71 @@ img{
 
 
 /* ---------------------Responsive hero 🧝‍♂️--------------------- */
-@media only screen and (max-width: 996px) {
+@media only screen and (max-width: 1450px){
+    .hero h1{
+        font-size: 4.7rem !important;
+        line-height: 6rem;
+    }
+    .header img{
+        width:62rem;
+    }
+    
+    .icons{
+        left: 12% !important;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .hero h1{
+        font-size: 4.4rem !important;
+    }
+    .header img{
+        width:60rem;
+    }
+    
+    .icons{
+        left: 13% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px){
     .hero {
-    transform: translate(10%, -50%);
+        transform: translate(10%, -50%);
+        }
+    .hero h1{
+        font-size: 4.2rem !important;
+        line-height: 6rem;
+    }
+    .header img{
+        width:55rem;
+    }
+    
+    .icons{
+        left: 15% !important;
+    }
+}
+@media only screen and (max-width: 1100px){
+
+    .hero h1{
+        font-size: 4rem !important;
+        line-height: 6rem;
+    }
+    .header img{
+        width:50rem;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .hero h1{
+        font-size: 3.5rem !important;
+        line-height: 6rem;
+    }
+    .header img{
+        width:40rem;
+    }
+
+    .icons{
+        left: 5% !important;
     }
    }
     
@@ -292,10 +356,44 @@ img{
     .hero h1 {
     font-size: 4rem;
     }
+    .hero {
+        display: block;
+        top: 35%;
+        transform: translate(10%, -50%);
+        }
    }
     
 @media only screen and (max-width: 567px) {
     .hero {
+    display: block;
+    top: 35%;
+    transform: translate(10%, -50%);
+    }
+    
+    .hero h3 {
+    font-size: 1.6rem !important;
+    }
+    
+    .hero h1 {
+    font-size: 2.5rem !important;
+    line-height: 5.5rem;
+    }
+    
+    .hero h4 {
+    font-size: 1.6rem;
+    }
+    .header img{
+        width:33rem;
+    }
+
+    span i{
+        font-size: 2rem;
+    }
+   }
+
+   @media only screen and (max-width: 370px) {
+    .hero {
+    display: block;
     top: 35%;
     transform: translate(10%, -50%);
     }
@@ -306,18 +404,55 @@ img{
     
     .hero h1 {
     font-size: 3rem;
+    line-height: 4rem;
     }
     
     .hero h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     }
-   }
+    .header img{
+        width:26rem;
+    }
+
+     span i{
+        font-size: 1.8rem;
+    }
     
+   }
+   /* ------------------Responsive header 👦------------------*/
+/* -------💻--------- */
+/* @media only screen and (max-width: 996px){
+    .header {
+        min-height: 60vh;
+    }
+    .hero h1{
+        font-size: 4.7rem !important;
+        line-height: 6rem;
+    }
+    .header img{
+        right: -10%;
+        width: 50rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header img{
+        width: 40rem;
+    }
+}
+@media only screen and (max-width: 567px){
+    .header {
+        min-height: 100vh;
+    }
+    .header img{
+        width: 35rem;
+    }
+} */
+
  .icons {
-    position: absolute;
-    bottom: 5%;
     left: 10%;
     color: var(--color-secondary);
+    margin-top: 2rem;
+    
    }
     
    .icons span:not(:last-child) {
@@ -325,7 +460,7 @@ img{
    }
     
    .icons span {
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
    }
@@ -333,12 +468,7 @@ img{
    .icons span:hover {
     color: var(--customColor);
    }
-    
-   @media only screen and (max-width: 567px) {
-    .icons {
-    display: none;
-    }
-   }
+
 
  /* --------Section page mon profil🤷---------  */
  .about-me{
@@ -427,7 +557,6 @@ a.btn {
     color:var(--color-secondary);
     font-weight: bold;
     border: 3px solid var(--color-secondary);
-
    }
     
  a.btn:active {
