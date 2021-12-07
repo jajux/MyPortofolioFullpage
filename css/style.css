@@ -3,17 +3,124 @@
     --color-primary: #030e1a;
     --color-secondary: #2c3e50;
     --color-tertiary: #f6f6f6;
-    --font-family-h: font-family: "murberrynormal";
-    --font-family-p:   font-family: "murberrynorma";
+    --font-family-h:    font-family: 'made_evolve_sans_evorbold', sans-serif; 
+    --font-family-p:    font-family: 'made_evolve_sans_evoregular';
+;
 }
+
 /* font face murberry */
 @font-face {
     font-family: "murberrynormal";
-    src: url("../resources/font_murberry/murberry-webfont.woff2") format("woff2"),
-      url("../resources/font_murberry/murberry-webfont.woff") format("woff");
+    src: url("../resources/font/font_murberry/murberry-webfont.woff2") format("woff2"),
+      url("../resources/font/font_murberry/murberry-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
+
+  /* Font KAGURA */
+@font-face {
+    font-family: 'kaguraregular';
+    src: url('../resources/font/kagura/kagura-webfont.woff2') format('woff2'),
+         url('../resources/font/kagura/kagura-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font MADE */
+@font-face {
+    font-family: 'made_evolve_sansbold';
+    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sans_evobold';
+    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sanslight';
+    src: url('../resources/font/made/made_evolve_sans_light_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_light_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sans_evolight';
+    src: url('../resources/font/made/made_evolve_sans_light_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_light_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sansmedium';
+    src: url('../resources/font/made/made_evolve_sans_medium_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_medium_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sans_evomedium';
+    src: url('../resources/font/made/made_evolve_sans_medium_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_medium_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sansregular';
+    src: url('../resources/font/made/made_evolve_sans_regular_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_regular_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sans_evoregular';
+    src: url('../resources/font/made/made_evolve_sans_regular_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_regular_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sansthin';
+    src: url('../resources/font/made/made_evolve_sans_thin_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_thin_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'made_evolve_sans_evothin';
+    src: url('../resources/font/made/made_evolve_sans_thin_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_thin_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'made_evolve_sansbold';
+    src: url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'made_evolve_sans_evobold';
+    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
+         url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Font family : "Josefin Sans", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 
@@ -25,105 +132,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .fp-tableCell{
     display:flex; 
 }
 
-/* Setup body title anchors img*/
+/* Setup body Title-Anchors-Img...*/
 body{
     font-size: 1.6rem;
-    font-family: var(--font-family-p);
+    font-family: 'made_evolve_sans_evoregular';
     position: relative;
     z-index: 1;
 }
+
 h1,
-h2,
-h3
-{
-    font-family: "murberrynormal";
-    font-weight: 600;
+h2{
+    font-family: var(--font-family-h);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+
 }
+p{
+    font-family: var(--font-family-p);
+}
+
 li{
     list-style: none;
 }
+
 a{
     text-decoration: none;
 }
 
-.logo-title{
-    font-family: var(--font-family-h);
-}
 .container{
     max-width: 114rem;
     margin: 0 auto;
 }
-@media only screen and (max-width: 1200px){
-    .container{
-        padding: 0 3rem;
-    }
+
+/* ----Put the navigation bar in the header---- */
+#fullpage{
+    padding-top:50px;
 }
 
-/* ------------------Header 👦-------------------*/
-.header{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    z-index: 1;
-    overflow: hidden;
-    background-image: linear-gradient(to top, #cac0bd 0%, #8783b3 100%);
-}
-
-.header img{
-    position: absolute;
-    bottom: 0;
-    right: -5%;
-    width:60rem;
-    z-index: -1;
-}
-/* ------------------Responsive header 👦------------------*/
-/* -------💻--------- */
-@media only screen and (max-width: 996px){
-    .header {
-        min-height: 60vh;
-    }
-    .hero h1{
-        font-size: 4.7rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        right: -10%;
-        width: 50rem;
-    }
-}
-@media only screen and (max-width: 768px){
-    .header img{
-        width: 40rem;
-    }
-}
-@media only screen and (max-width: 567px){
-    .header {
-        min-height: 100vh;
-    }
-    .header img{
-        width: 35rem;
-    }
-}
 /* -----------------------------Navigation 🚀----------------------------- */
-.nav{
-    padding: 1.6rem 0;
-}
 
 .nav .fix-nav{
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
-    background: transparent;
+    background: transparent ;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     z-index: 1000;
 }
 
-.nav .fix-nav .logo h1 .logo-title{
+.nav .fix-nav .logo h1 span{
     color: rgb(12, 12, 12);
 }
 
@@ -136,36 +199,36 @@ a{
 
 .logo h1{
     font-size: 2.5rem;
+    margin: 10px;
+    letter-spacing: unset;
 }
 
-.logo h1 span{
+.logo-title{
+    font-family: 'made_evolve_sans_evomedium';
+    font-size: 1.5rem;
+    display: initial;
     color: var(--color-secondary);
 }
 
 .nav-list{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 .nav-item:not(:last-child){
     margin-right: .5rem;
 }
 
-.nav-link:link, .nav-link:visited{
+.nav-link:link, 
+.nav-link:visited{
     color: var(--color-secondary);
     padding: 0.8rem 1rem;
-    transition: all .3s ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .nav-link:hover{
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     background: var(--color-secondary);
     color: whitesmoke;
-}
-
-/* ------------------Hamburger 🍔------------------ */
-.top-nav, .hamburger{
-    display: none;
 }
 
 @media only screen and (max-width: 1300px){
@@ -180,10 +243,10 @@ a{
         transition: all 500ms ease-in-out;
         z-index: 100;
     }
-    .menu .show{
+    .menu.show{
         left: 0;
     }
-    .top-nav{
+    .top-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -195,7 +258,7 @@ a{
         }
         
         .top-nav .close {
-        color: var(--color-secondary);
+        color:#000;
         font-size: 2.3rem;
         padding: 1rem;
         cursor: pointer;
@@ -213,7 +276,7 @@ a{
         .nav-link:visited {
         display: block;
         font-size: 1.7rem;
-        color: var(--color-secondary);
+        color: #000;
         padding: 1rem 0;
         }
         
@@ -239,31 +302,60 @@ a{
         }
 }
 
+/* -----Hamburger 🍔-----*/
+.top-nav, 
+.hamburger{
+    display: none;
+}
+
+/* ------------------Header 👦-------------------*/
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    background-image: linear-gradient(to right, black 0%, #252323);
+}
+
+.header img{
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    width:75rem;
+    z-index: -1;
+}
+
 /* -------------------------Hero 🧝‍♂️------------------------- */
 .hero{
     position: absolute;
     top: 50%;
-    transform: translate(30%, -50%);
-}
-
-.hero h3{
-    font-family: var(--font-family-p);
-    font-size: 2rem;
-    font-weight: 400;
+    transform: translate(10%, -50%);
+    color: var(--color-tertiary);
 }
 
 .hero h1{
-    font-size: 6rem;
-    line-height: 7rem;
+    font-size: 10rem;
+    font-family: 'made_evolve_sansregular';
 }
 
-.hero h3{
-    font-size: 2rem;
+h1 span{
+    display: block;
+    font-family: 'made_evolve_sansregular';
+    font-size: 10rem;
 }
 
-.hero h4 span{
-    color: var(--color-secondary);
-    text-decoration: underline;
+.hero h2{
+    font-size: 10rem;
+    font-weight: 800;
+    letter-spacing: -0.05em; 
+
+}
+
+.hero h2 strong{
+    font-size: 11rem;
+    font-weight: 700;
+    display: block;
 }
 
 .hero a:link,
@@ -282,171 +374,9 @@ a{
     font-weight: bold;
    } 
 
-
-/* ---------------------Responsive hero 🧝‍♂️--------------------- */
-@media only screen and (max-width: 1450px){
-    .hero h1{
-        font-size: 4.7rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        width:62rem;
-    }
-    
-    .icons{
-        left: 12% !important;
-    }
-}
-@media only screen and (max-width: 1300px){
-    .hero h1{
-        font-size: 4.4rem !important;
-    }
-    .header img{
-        width:60rem;
-    }
-    
-    .icons{
-        left: 13% !important;
-    }
-}
-
-@media only screen and (max-width: 1200px){
-    .hero {
-        transform: translate(10%, -50%);
-        }
-    .hero h1{
-        font-size: 4.2rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        width:55rem;
-    }
-    
-    .icons{
-        left: 15% !important;
-    }
-}
-@media only screen and (max-width: 1100px){
-
-    .hero h1{
-        font-size: 4rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        width:50rem;
-    }
-
-}
-
-@media only screen and (max-width: 950px) {
-    .hero h1{
-        font-size: 3.5rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        width:40rem;
-    }
-
-    .icons{
-        left: 5% !important;
-    }
+span i{
+       color: var(--color-tertiary);
    }
-    
-@media only screen and (max-width: 768px) {
-    .hero h1 {
-    font-size: 4rem;
-    }
-    .hero {
-        display: block;
-        top: 35%;
-        transform: translate(10%, -50%);
-        }
-   }
-    
-@media only screen and (max-width: 567px) {
-    .hero {
-    display: block;
-    top: 35%;
-    transform: translate(10%, -50%);
-    }
-    
-    .hero h3 {
-    font-size: 1.6rem !important;
-    }
-    
-    .hero h1 {
-    font-size: 2.5rem !important;
-    line-height: 5.5rem;
-    }
-    
-    .hero h4 {
-    font-size: 1.6rem;
-    }
-    .header img{
-        width:33rem;
-    }
-
-    span i{
-        font-size: 2rem;
-    }
-   }
-
-   @media only screen and (max-width: 370px) {
-    .hero {
-    display: block;
-    top: 35%;
-    transform: translate(10%, -50%);
-    }
-    
-    .hero h3 {
-    font-size: 1.6rem;
-    }
-    
-    .hero h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-    }
-    
-    .hero h4 {
-    font-size: 1.4rem;
-    }
-    .header img{
-        width:26rem;
-    }
-
-     span i{
-        font-size: 1.8rem;
-    }
-    
-   }
-   /* ------------------Responsive header 👦------------------*/
-/* -------💻--------- */
-/* @media only screen and (max-width: 996px){
-    .header {
-        min-height: 60vh;
-    }
-    .hero h1{
-        font-size: 4.7rem !important;
-        line-height: 6rem;
-    }
-    .header img{
-        right: -10%;
-        width: 50rem;
-    }
-}
-@media only screen and (max-width: 768px){
-    .header img{
-        width: 40rem;
-    }
-}
-@media only screen and (max-width: 567px){
-    .header {
-        min-height: 100vh;
-    }
-    .header img{
-        width: 35rem;
-    }
-} */
 
  .icons {
     left: 10%;
@@ -469,6 +399,161 @@ a{
     color: var(--customColor);
    }
 
+
+   
+/* ---------------------Responsive hero 🧝‍♂️--------------------- */
+@media only screen and (max-width: 1850px){
+    .header img{
+        width:68rem;
+        right: -10%;
+    }
+    .hero h1{
+        font-size: 8.5rem;
+    }
+    h1 span{
+        font-size: 8.5rem;
+    }
+
+    .hero h2{
+        font-size: 8.5rem;
+    }
+    .hero h2 strong{
+        font-size: 9rem;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    .header img{
+        width:64rem;
+        right: -10%;
+    }
+    .hero h1{
+        font-size: 7.8rem;
+    }
+    h1 span{
+        font-size: 7.8rem;
+    }
+
+    .hero h2{
+        font-size: 7.8rem;
+    }
+    .hero h2 strong{
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .header img{
+        width:64.5rem;
+        right: -15%;
+    }
+    .hero h1{
+        font-size: 7.5rem;
+    }
+    h1 span{
+        font-size: 7.5rem;
+    }
+
+    .hero h2{
+        font-size: 7.5rem;
+    }
+    .hero h2 strong{
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    .header img{
+        width:64.5rem;
+        right: -20%;
+    }
+    .hero h1{
+        font-size: 6.5rem;
+    }
+    h1 span{
+        font-size: 6.5rem;
+    }
+
+    .hero h2{
+        font-size: 6.5rem;
+    }
+    .hero h2 strong{
+        font-size: 6.5rem;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .header img{
+        width:64.5rem;
+        right: -20%;
+    }
+    .hero h1{
+        font-size: 4.5rem;
+    }
+    h1 span{
+        font-size: 4.5rem;
+    }
+
+    .hero h2{
+        font-size: 4.5rem;
+    }
+    .hero h2 strong{
+        font-size:4.8rem;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .header img{
+        width:60rem;
+        right: -25%;
+    }
+    .hero h1{
+        font-size: 3.5rem;
+    }
+    h1 span{
+        font-size: 3.5rem;
+    }
+
+    .hero h2{
+        font-size: 3.5rem;
+    }
+    .hero h2 strong{
+        font-size:3.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .hero{
+        top: 17%;
+        transform: translate(5%, -20%);
+    }
+    
+    .header img{
+        width:40rem;
+        right: -15%;
+        bottom: 7%;
+    }
+
+    .hero h1{
+        font-size:5rem;
+    }
+    h1 span{
+        font-size: 4.5rem;
+    }
+
+    .hero h2{
+        font-size: 5.5rem;
+    }
+    .hero h2 strong{
+        font-size: 4.5rem;
+    }
+
+    .icons{
+position: absolute;
+padding-top: 350px;    
+margin-top: 0px;
+left: 0% !important;
+}
+}
 
  /* --------Section page mon profil🤷---------  */
  .about-me{
@@ -600,140 +685,3 @@ a.btn {
     }
    }
 
-/* ----------------------Slide services👍------------------- */
-.slide .fp-tableCell{
-    display: inline !important;
-}
-
-.theme {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-}
-
-.theme .title {
-    color: var(--color-tertiary);
- }
-    
-.services-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 4rem;
-
- }
-
-.theme .title h1:after{
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 0.2rem;
-    bottom: -20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background:#c2b299;
-    z-index: 1;
-}
-
-.service {
-    color: var(--color-tertiary);
-    background: rgb(201 254 220 / 6%); 
-    padding: 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    transition: all 300ms ease-in-out;
-}
-
-.service span {
-    color: var(--color-tertiary);
-    font-size: 4rem;
-    transition: all 300ms ease-in-out;
-   }
-    
-.service h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-   }
-    
-.service p {
-    font-size: 1.4rem;
-    color: #c2b299;;
-    text-align: justify;
-   }
-    
-.service:hover {
-    background-color:  #c2b299;;
-    color: whitesmoke;
-   }
-    
-.service:hover span{
-    color: whitesmoke;
-   }
-
-.service:hover h2{
-    color: whitesmoke;
-}
-
-.service:hover p{
-    color: whitesmoke;
-}
-
-/* ----------------------Slide skills🏆------------------- */
-.theme-skills {
-    background-color: #c2b299;
-    color: var(--color-primary);
-}
-.theme-skills .title h1:after{
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 0.2rem;
-    bottom: -20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background:var(--color-secondary);
-    z-index: 1;
-}
-.team {
-    color: #fff;
-    background-color: #111;
-    padding: 3rem;
-    text-align: center;
-    border-radius: 1rem;
-    border-bottom: 4px solid transparent;
-    transition: all 300ms ease-in-out;
-   }
-    
-   .team .img-cover {
-    overflow: hidden;
-    border-radius: 100%;
-    border: 4px solid var(--customColor);
-    height: 13rem;
-    width: 13rem;
-    margin: 0 auto;
-    transition: all 300ms ease-in-out;
-   }
-    
-   .team .img-cover img {
-    height: 100%;
-    object-fit: cover;
-   }
-    
-   .team h3 {
-    font-size: 1.6rem;
-    margin: 1rem 0;
-   }
-    
-   .team p {
-    font-size: 1.5rem;
-    color: #ccc;
-    width: 80%;
-    margin: 0 auto 1rem auto;
-   }
-    
-   .team:hover {
-    border-bottom: 4px solid #fff;
-    background-color: var(--customColor);
-   }
-    
-   .team:hover .img-cover {
-    border-color: #fff;
-   }
