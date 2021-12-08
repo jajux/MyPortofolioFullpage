@@ -214,6 +214,7 @@ a{
     display: flex;
     align-items: center;
 }
+
 .nav-item:not(:last-child){
     margin-right: .5rem;
 }
@@ -232,6 +233,7 @@ a{
 }
 
 @media only screen and (max-width: 1300px){
+
     .menu{
         position: fixed;
         top: 0;
@@ -239,7 +241,6 @@ a{
         width: 80%;
         max-width: 40rem;
         height: 100%;
-        background-color: #fff;
         transition: all 500ms ease-in-out;
         z-index: 100;
     }
@@ -339,12 +340,6 @@ a{
     font-family: 'made_evolve_sansregular';
 }
 
-h1 span{
-    display: block;
-    font-family: 'made_evolve_sansregular';
-    font-size: 10rem;
-}
-
 .hero h2{
     font-size: 10rem;
     font-weight: 800;
@@ -410,9 +405,6 @@ span i{
     .hero h1{
         font-size: 8.5rem;
     }
-    h1 span{
-        font-size: 8.5rem;
-    }
 
     .hero h2{
         font-size: 8.5rem;
@@ -425,12 +417,9 @@ span i{
 @media only screen and (max-width: 1500px){
     .header img{
         width:64rem;
-        right: -10%;
     }
+
     .hero h1{
-        font-size: 7.8rem;
-    }
-    h1 span{
         font-size: 7.8rem;
     }
 
@@ -443,53 +432,26 @@ span i{
 }
 
 @media only screen and (max-width: 1300px){
+
     .header img{
-        width:64.5rem;
         right: -15%;
     }
     .hero h1{
         font-size: 7.5rem;
     }
-    h1 span{
-        font-size: 7.5rem;
-    }
-
     .hero h2{
         font-size: 7.5rem;
     }
-    .hero h2 strong{
-        font-size: 8rem;
-    }
+
 }
 
-@media only screen and (max-width: 1240px){
+@media only screen and (max-width: 1150px){
     .header img{
         width:64.5rem;
         right: -20%;
     }
-    .hero h1{
-        font-size: 6.5rem;
-    }
-    h1 span{
-        font-size: 6.5rem;
-    }
 
-    .hero h2{
-        font-size: 6.5rem;
-    }
-    .hero h2 strong{
-        font-size: 6.5rem;
-    }
-}
-@media only screen and (max-width: 1100px){
-    .header img{
-        width:64.5rem;
-        right: -20%;
-    }
     .hero h1{
-        font-size: 4.5rem;
-    }
-    h1 span{
         font-size: 4.5rem;
     }
 
@@ -509,10 +471,6 @@ span i{
     .hero h1{
         font-size: 3.5rem;
     }
-    h1 span{
-        font-size: 3.5rem;
-    }
-
     .hero h2{
         font-size: 3.5rem;
     }
@@ -521,10 +479,12 @@ span i{
     }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 769px){
+
     .hero{
         top: 17%;
         transform: translate(5%, -20%);
+        transition: all 300ms ease-out;
     }
     
     .header img{
@@ -536,23 +496,77 @@ span i{
     .hero h1{
         font-size:5rem;
     }
-    h1 span{
-        font-size: 4.5rem;
-    }
 
     .hero h2{
         font-size: 5.5rem;
     }
-    .hero h2 strong{
+
+    .icons{
+    position: absolute;
+    padding-top: 250px;    
+    margin-top: 0px;
+    left: 0% !important;
+}
+
+}
+
+@media only screen and (max-width: 651px){
+    .hero{
+        line-height: 7rem
+    }
+    
+    .header img{
+        width:30rem;
+    }
+
+    .hero h2{
         font-size: 4.5rem;
+    }
+    .icons{
+    padding-top: 150px;    
+}
+}
+@media only screen and (max-width: 426px){
+    .hero{
+        transform: translate(5%, -30%);
+    }
+    
+    .header img{
+        width:25rem;
+        right: -20%;
+    }
+
+    .hero h2{
+        font-size: 3.8rem;
     }
 
     .icons{
-position: absolute;
-padding-top: 350px;    
-margin-top: 0px;
-left: 0% !important;
+    padding-top: 220px;
+    }    
 }
+
+@media only screen and (max-width: 375px){
+    
+    .header img{
+        width:100%;
+        right: 0%;
+        bottom: 0%;
+    }
+
+    .hero h2{
+        font-size: 3.3rem;
+    }
+
+    .hero h2 strong{
+        font-size: 4rem;
+    }
+
+    .icons{
+    padding-top: 10px;    
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
  /* --------Section page mon profil🤷---------  */
@@ -647,8 +661,9 @@ a.btn {
  a.btn:active {
     transform: translateY(0px);
    }
-/* ---------------------Responsive About me --------------------- */
 
+
+/* ---------------------Responsive About me --------------------- */
 @media only screen and (max-width: 996px) {
     .right h1 {
     font-size: 2rem;
@@ -667,9 +682,11 @@ a.btn {
     height: 40rem;
     max-width: 25rem;
     }
+
    }
 
    @media only screen and (max-width: 768px) {
+
     .about-center {
     grid-template-columns: 1fr;
     gap: 3rem 0rem;
@@ -683,5 +700,6 @@ a.btn {
     height: 40rem;
     max-width: 90%;
     }
+
    }
 
