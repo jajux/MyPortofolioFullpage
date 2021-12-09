@@ -171,7 +171,7 @@ a{
 
 /* ----Put the navigation bar in the header---- */
 #fullpage{
-    padding-top:50px;
+    padding-top: 40px;
 }
 
 /* -----------------------------Navigation 🚀----------------------------- */
@@ -181,13 +181,12 @@ a{
     left: 0;
     width: 100%;
     position: fixed;
-    background: transparent ;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     z-index: 1000;
 }
 
 .nav .fix-nav .logo h1 span{
-    color: rgb(12, 12, 12);
+    color: rgb(105, 23, 23);
 }
 
 .navigation{
@@ -232,8 +231,19 @@ a{
     color: whitesmoke;
 }
 
+
+/* -----Hamburger 🍔-----*/
+.top-nav, 
+.hamburger{
+    display: none;
+}
+
+
 @media only screen and (max-width: 1300px){
 
+    #fullpage{
+        padding-top: 30px;
+    }
     .menu{
         position: fixed;
         top: 0;
@@ -244,6 +254,7 @@ a{
         transition: all 500ms ease-in-out;
         z-index: 100;
     }
+
     .menu.show{
         left: 0;
     }
@@ -251,62 +262,69 @@ a{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: whitesmoke;
+        background: #fff;
         padding: 1rem 1.6rem;
     }
+
+    .logo h1 span {
+        margin: 0;
+        }
+    
     .logo h1 span {
         color: var(--color-secondary);
         }
         
-        .top-nav .close {
+    .top-nav .close {
         color:#000;
         font-size: 2.3rem;
         padding: 1rem;
         cursor: pointer;
-        }
-        
-        .hamburger {
+    }
+
+    /* Align to right */
+    .container .close{
+        position: absolute;
+        right: -500px;
+
+    }
+
+    .hamburger {
         display: block;
         color: var(--color-secondary);
         font-size: 2.3rem;
-        padding: 0.5rem;
+        padding: 0.8rem;
         cursor: pointer;
-        }
+    }
         
-        .nav-link:link,
-        .nav-link:visited {
+    .nav-link:link,
+    .nav-link:visited {
         display: block;
         font-size: 1.7rem;
-        color: #000;
+        color: #252323;
         padding: 1rem 0;
-        }
+    }
         
-        .nav-list {
+    .nav-list {
         flex-direction: column;
         align-items: start;
         padding: 1rem 1.6rem;
-        }
+    }
         
-        body.show::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(153, 16, 16, 0.8);
-        z-index: 1;
-        }
+    body.show::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+}
         
-        .nav.show {
-        background-color: rgba(175, 34, 34, 0.8);
-        }
+.nav.show {
+    background-color: #fff;
 }
 
-/* -----Hamburger 🍔-----*/
-.top-nav, 
-.hamburger{
-    display: none;
 }
 
 /* ------------------Header 👦-------------------*/
@@ -338,6 +356,7 @@ a{
 .hero h1{
     font-size: 10rem;
     font-family: 'made_evolve_sansregular';
+    text-transform: capitalize;
 }
 
 .hero h2{
