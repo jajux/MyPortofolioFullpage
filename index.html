@@ -11,13 +11,10 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-        <!-- Glidejs -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css"
-      />
-  
-        <!-- fullpage css -->
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css" />
+
+    <!-- fullpage css -->
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,6 +23,8 @@
 </head>
 
 <body>
+
+    <!-- -----------------------------Navigation 🚀----------------------------- -->
     <nav class="nav">
         <div class="container navigation">
             <div class="logo">
@@ -43,10 +42,10 @@
                 </div>
 
                 <ul class="nav-list">
-                    <li class="nav-item">
+                    <li class="nav-item" data-menuanchor="home0">
                         <a href="#home" class="nav-link scroll-link">Accueil</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-menuanchor="about1">
                         <a href="#about" class="nav-link scroll-link">Qui suis-je ?</a>
                     </li>
                     <li class="nav-item">
@@ -60,7 +59,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <!-- Hamburger 🍔 -->
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -71,14 +70,11 @@
 
     <div id="fullpage">
         <!-- Header 👦 -->
-        <div class="section home">
+        <div class="section home" id="section0">
 
-            <!-- -----------------------------Navigation 🚀----------------------------- -->
             <header id="id-home" class="header">
 
-
-                <!-- Hero 🧝‍♂️ -->
-
+                <!-- ---------------------------Hero 🧝‍♂️------------------------------------ -->
                 <div class="hero">
                     <h1>jawad,</h1>
                     <h2>développeur <strong>front-end</strong></h2>
@@ -93,13 +89,14 @@
                 </div>
 
                 <!-- ----------------Photo Jawad 📷---------------- -->
-                <img class="banner" src="./resources/images/exemple-hero.png" alt="photo de jawad">
+                <!-- <img src="./resources/images/exemple-hero.png" alt="photo de jawad"> -->
+                <img class="banner" src="./resources/images/about-3-exemple.png" alt="photo de jawad a propos">
 
             </header>
         </div>
 
         <!-- Section page mon profil🤷 -->
-        <div class="section about-me about" id="id-about">
+        <div class="section about-me about" id="section1">
             <div class="title">
                 <h1>Front-End développeur jr,</h1>
             </div>
@@ -122,29 +119,51 @@
 
         </div>
 
-        <!-- ------------------Script📑------------------ -->
-        <script src="js/fullpage.js"></script>
-        <script type="text/javascript">
-            new fullpage('#fullpage', {
-                licenseKey: 'E71F9B24-FBC54CBA-8281A3EC-343FA672',
-                navigation: true,
-                navigationTooltips: ['Accueil', 'Mon profil', 'Compétences', 'Portfolio', 'Contact'],
-                showActiveTooltip: true,
-                responsiveWidth: 700,
-                controlArrows: true,
-                // anchors: ['home', 'about-us', 'contact'],
-                onLeave: function (origin, destination, direction) {
-                    console.log("Leaving section" + origin.index);
-                },
-            });
-        </script>
-        <!-- AOS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <div class="section skills" id="section2">
+
+            <div class="bg-text">
+                <h2>compétences</h2>
+            </div>
+
+            <div class="content">
+                <div class="text-skills">
+                    <div class="text-inner">
+                        <h4>Front-end Développeur</h4>
+                        <h1>Jawad</h1>
+                        <h6>Sémantique 
+                            <span>- Cascade</span> 
+                            <span class="resp">- Mobile frist</span> 
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------------------Script📑------------------ -->
+    <script src="js/fullpage.js"></script>
+    <script type="text/javascript">
+        new fullpage('#fullpage', {
+            licenseKey: 'E71F9B24-FBC54CBA-8281A3EC-343FA672',
+            navigation: true,
+            anchors: ['home', 'about', 'skills'],
+            navigationTooltips: ['home', 'about'],
+            showActiveTooltip: true,
+            responsiveWidth: 700,
+            controlArrows: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- Glidejs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
-        <script src="./js/app.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 
