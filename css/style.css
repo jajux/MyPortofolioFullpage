@@ -51,22 +51,7 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'made_evolve_sanslight';
-    src: url('../resources/font/made/made_evolve_sans_light_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_light_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: 'made_evolve_sans_evolight';
-    src: url('../resources/font/made/made_evolve_sans_light_evo_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_light_evo_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 @font-face {
     font-family: 'made_evolve_sansmedium';
     src: url('../resources/font/made/made_evolve_sans_medium_personal_use-webfont.woff2') format('woff2'),
@@ -147,7 +132,7 @@
 
 #fp-nav ul li a span{
     background: rgb(136, 137, 140);
-    color:rgb(8, 4, 4);
+    color:#080404;
 }
 
 /* Setup body Title-Anchors-Img...*/
@@ -248,7 +233,6 @@ a{
     color: whitesmoke;
 }
 
-
 /* -----Hamburger 🍔-----*/
 .top-nav, 
 .hamburger{
@@ -341,7 +325,6 @@ a{
 }
 
 @media only screen and (max-width: 490px){
-  
     .nav-link:link,
     .nav-link:visited {
         font-size: 2.5rem;
@@ -349,7 +332,6 @@ a{
 }
 
 @media only screen and (max-width: 350px){
-  
     .nav-link:link,
     .nav-link:visited {
         font-size: 2rem;
@@ -441,8 +423,6 @@ span i{
    .icons span:hover {
     color: var(--customColor);
    }
-
-
    
 /* ---------------------Responsive hero 🧝‍♂️--------------------- */
 @media only screen and (max-width: 1850px){
@@ -642,9 +622,7 @@ span i{
 }
 
  /* --------Section page mon profil🤷---------  */
- /* .about-me{
-    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); 
-}*/
+
 .about-me{
     position: relative;
     width: 100%;
@@ -884,53 +862,8 @@ a.btn {
     }
   }
 
-    /* Banner horizontal column infinite */
-.text-el{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: -50;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-     display: flex;
-    line-height: 10rem;
-    animation: slide-vertical, 5s, infinite;
-}
-
-  @keyframes slide-vertical {
-    from {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-      }
-      to {
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%);
-  }
-      
-  }
-
-.text-el h2{
-    font-size: 6rem;
-    color: #fff;
-    font-family: 'notableregular';
-}
-
-/* Stroke text */
-.text-el h2.stroke {
-   color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px #fff;
-   -moz-text-stroke: 1px #fff;
-   -o-text-stroke: 1px #fff;
-}
-
-
-
-  
-  @media only screen and (max-width: 2099px){
+/* Responsive section2 */
+@media only screen and (max-width: 2099px){
     .bg-text h2{
         font-size: 16.5rem;
     }
@@ -1004,4 +937,77 @@ a.btn {
         display: none;
     }
   }
+
+/* -----------------Section 3------------- */
+
+  .lang{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 69px);
+    z-index: 1;
+    overflow: hidden;
+    background: #000;
+    margin-top: 5rem;
+    background: url(../resources/images/section3_background2.png) no-repeat center/cover;
+}
+
+    /* Banner horizontal column infinite */
+    .text-el h2{
+        font-size: 2.5rem;
+        color: #fff;
+        font-family: 'notableregular';
+        margin-left: 20px;
+    }
+    
+    /* Stroke text */
+    .text-el h2.stroke {
+       color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: 1px #fff;
+       -moz-text-stroke: 1px #fff;
+       -o-text-stroke: 1px #fff;
+    }
+
+.text-el div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: self-start;
+    display: flex;
+    line-height: 7rem;
+    animation: slide-vertical 20s linear infinite;
+    animation-delay: -20s;
+
+}
+
+@keyframes slide-vertical {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+  }
+  }
+
+.text-el div:nth-child(2){
+    animation: slide-vertical2 20s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes slide-vertical2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    100% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+  }
+}
 
