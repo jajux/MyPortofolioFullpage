@@ -1066,7 +1066,7 @@ a.btn {
     min-height: 100vh;
     z-index: 999;
     overflow: hidden;
-    background: rgb(238, 236, 236);
+    background: var(--color-primary);
     margin-top: 5rem;
 }
 
@@ -1115,42 +1115,50 @@ a.btn {
 
 .port-content .item .text h3{
     font-size: 3.5rem;
-    font-family: 'made_evolve_sans_evobold';
+    font-family: 'notableregular';
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px #fff;
+   -moz-text-stroke: 1px #fff;
+   -o-text-stroke: 1px #fff;
+   letter-spacing: 0.5rem;
+}
+
+.port-content .item .text p{
+    font-family: 'made_evolve_sans_evoregular';
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+.port-content .item .text ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-family: 'notableregular';
+}
+
+.port-content .item .text ul:nth-last-child(4){
+    margin-right: 1rem;
 }
 
 .port-content .item .text a{
     color: var(--color-tertiary);
-    font-family: 'notableregular';
-    font-size: 1.5rem;
+    font-family: 'made_evolve_sans_evoregular';
+    font-size: 1rem;
+    display: block;
+    text-transform: capitalize;
 }
 
-.port-content .item .text a span{
-    font-size: 1.7rem;
+.port-content .item .text a span i{
+    font-size: 1.2rem;
     display: inline-block;
     transition: all ease 2s;
 }
 
-.port-content .item .text a:hover span{
+.port-content .item .text a:hover span i{
     transform: rotate(360deg);
 }
-
-
-/* .port-text{
-    position: absolute;
-    width: 100vw;
-    bottom: -40px;
-    text-transform: uppercase;
-    color: var(--color-tertiary);
-}
-
-.port-text h2{
-    font-family: 'made_evolve_sans_evobold';
-    font-size: 18.5rem;
-    opacity: .65;
-    text-align: center;
-    animation: pop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-} */
 
 
 
