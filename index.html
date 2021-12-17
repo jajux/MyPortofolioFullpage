@@ -28,8 +28,9 @@
     <nav class="nav">
         <div class="container navigation">
             <div class="logo">
-                <a href="#home"><h1>Oh <span class="logo-title">My</span> Dev</h1>
-            </a>
+                <a href="#home">
+                    <h1>Oh <span class="logo-title">My</span> Dev</h1>
+                </a>
             </div>
 
             <div class="menu">
@@ -71,8 +72,7 @@
 
     <div id="fullpage">
         <!-- Header 👦 -->
-        <div class="section home">
-
+        <div class="section home" id="section0">
             <header class="header">
 
                 <!-- ---------------------------Hero 🧝‍♂️------------------------------------ -->
@@ -111,26 +111,38 @@
         </div>
 
         <!-- Section page mon profil🤷 -->
-        <div class="section about-me about" id="section1">
-            <div class="title">
-                <h1>Front-End développeur jr,</h1>
-            </div>
+        <div class="section about" id="section1">
 
-            <div class="about-center container">
-                <div class="left">
-                    <img src="./resources/images/about-2-exemple.png" alt="photo de jawad a propos">
-                </div>
+            <div class="main-about">
 
-                <div class="right" id="quote">
-                    <h1>Jawad un <span id="type2"></span></h1>
-                    <p>Je suis passioné par la création, le développement, l'intégration web, avec un focus prononcé sur
-                        les mouvements, l'interaction, les animations. Ceci, afin de fournir à l'utlisateur la meilleure
-                        expérience digital.</p>
-                    <a href="#" class="btn">Téléchargez mon CV</a>
+                <div class="about-me">
+
+                    <div class="about-content">
+                        <h1 class="about-title">à propos</h1>
+                        <div class="about-img">
+                            <img src="./resources/images/about/about-me.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="about-secondary">
+                        <a class="about-scroll" href="#skills">SCROLL DOWN</a>
+                        <div class="secondary-text year">
+                            <h3>Salut,</h3>
+                            <p>Moi c'est Jawad, je suis un ex-militaire des forces Françaises, après une reconversion et une formation diplomante de développeur web, je vis actuellement sur Toulouse en haute-Garonne.</p>
+                            <p>Je suis passioné par la création, le développement, l'intégration de maquette, avec un
+                                goût prononce les mouvements, l'interaction, les animations.
+                                <br> Ceci, afin de fournir à l'utlisateur la meilleure expérience aux utilisateurs.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
         </div>
+
 
         <div class="section skills" id="section2">
 
@@ -280,7 +292,7 @@
         new fullpage('#fullpage', {
             licenseKey: 'E71F9B24-FBC54CBA-8281A3EC-343FA672',
             navigation: true,
-            anchors: ['home','about', 'skills','portfolio', 'contact'],
+            anchors: ['home', 'about', 'skills', 'portfolio', 'contact'],
             navigationTooltips: ['Accueil', 'A propos', 'Skills', 'Portfolio', 'Contact'],
             showActiveTooltip: true,
             responsiveWidth: 700,

@@ -84,3 +84,18 @@ gsap.from(".text-inner h6", {
 gsap.from(".bg-text h2", {
     opacity: 0, duration: 1, delay: 2.5, x: -50, stagger: 0.2,
 });
+
+// --------------Animation section about--------------
+TweenMax.to(".about-content", 2, {
+    width: "100%",
+    ease: Expo.easeInOut
+})
+gsap.from('.about-title', {opacity: 0, duration: 2, delay: 1.5, y: 100})
+gsap.from('.about-img img', {opacity: 0, duration: 2, delay:1.5, y: -100})
+
+TweenMax.to(".about-secondary", 2.5, {
+    width: "100%",
+    ease: Expo.easeInOut
+})
+gsap.from('.about-scroll', {opacity: 0, duration: 3, x: -100})
+gsap.from('.year', {opacity: -1, duration: 1.5, delay: 1.5, x: 100})
