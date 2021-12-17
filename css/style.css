@@ -1,10 +1,12 @@
 /* Global */
 :root{
-    --color-primary: #030e1a;
+    --color-primary: #000000;
     --color-secondary: #2c3e50;
     --color-tertiary: #f6f6f6;
-    --font-family-h:    font-family: 'made_evolve_sans_evorbold', sans-serif; 
-    --font-family-p:    font-family: 'made_evolve_sans_evoregular';
+    --font-family-h: font-family: 'made_evolve_sans_evomedium', sans-serif; 
+    --font-family-p:    font-family: 'made_evolve_sansregular', sans-serif;
+    ;
+    ;
 }
 
 /* font face murberry */
@@ -34,23 +36,7 @@
     font-style: normal;
 }
 
-/* font MADE */
-@font-face {
-    font-family: 'made_evolve_sansbold';
-    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'made_evolve_sans_evobold';
-    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+/* font EVOLVE */
 
 @font-face {
     font-family: 'made_evolve_sansmedium';
@@ -66,8 +52,8 @@
          url('../resources/font/made/made_evolve_sans_medium_evo_personal_use-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'made_evolve_sansregular';
     src: url('../resources/font/made/made_evolve_sans_regular_personal_use-webfont.woff2') format('woff2'),
@@ -84,36 +70,6 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'made_evolve_sansthin';
-    src: url('../resources/font/made/made_evolve_sans_thin_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_thin_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'made_evolve_sans_evothin';
-    src: url('../resources/font/made/made_evolve_sans_thin_evo_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_thin_evo_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'made_evolve_sansbold';
-    src: url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_bold_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'made_evolve_sans_evobold';
-    src: url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
-         url('../resources/font/made/made_evolve_sans_bold_evo_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Font family : "Josefin Sans", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 
@@ -186,6 +142,10 @@ a{
     background: #fff;
 }
 
+.nav .logo a{
+    color: var(--color-primary);
+}
+
 .nav.fix-nav .logo h1 span{
     color: var(--color-secondary);
 }
@@ -213,6 +173,11 @@ a{
 .nav-list{
     display: flex;
     align-items: center;
+}
+
+nav ul li a{
+    user-select: none;
+    text-transform: capitalize;
 }
 
 .nav-item:not(:last-child){
@@ -374,7 +339,7 @@ a{
     font-size: 10rem;
     font-weight: 800;
     letter-spacing: -0.05em; 
-
+    text-transform: capitalize;
 }
 
 .hero h2 strong{
@@ -387,8 +352,8 @@ a{
 .hero a:visited {
  display: inline-block;
  padding: 0.8rem 1rem;
- border: 1px solid var(--color-secondary);
- background-color: var(--color-secondary);
+ border: 1px solid var(--color-primary);
+ background-color: var(--color-primary);
  color: whitesmoke;
  margin-top: 2rem;
 }
@@ -399,31 +364,31 @@ a{
     font-weight: bold;
    } 
 
-span i{
-       color: var(--color-tertiary);
-   }
-
- .icons {
-    left: 10%;
-    color: var(--color-secondary);
-    margin-top: 2rem;
-    
-   }
-    
-   .icons span:not(:last-child) {
-    margin-right: 1rem;
-   }
-    
-   .icons span {
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-   }
-    
-   .icons span:hover {
-    color: var(--customColor);
-   }
    
+   .icons {
+       left: 10%;
+       color: var(--color-secondary);
+       margin-top: 2rem;
+    }
+    
+    .icons span:not(:last-child) {
+        margin-right: 1rem;
+    }
+    
+    .icons span {
+        font-size: 2.5rem;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .icons span:hover {
+        color: var(--customColor);
+    }
+    
+    span  i{
+           color: var(--color-tertiary);
+       }
+
 /* ---------------------Responsive hero 🧝‍♂️--------------------- */
 @media only screen and (max-width: 1850px){
     .header img{
@@ -796,7 +761,7 @@ a.btn {
 
 .text-skills h1{
     font-size: 4rem;
-    font-family: 'made_evolve_sansbold';
+    font-family: 'made_evolve_sans_evoregular';
     margin: 0 0 15px ;
 }
 
@@ -840,7 +805,7 @@ a.btn {
 }
 
 .bg-text h2{
-    font-family: 'made_evolve_sans_evobold';
+    font-family: var(--font-family-h);
     font-size: 18.5rem;
     /* color: var(--color-tertiary); */
     opacity: .65;
@@ -1012,7 +977,7 @@ a.btn {
 
 .text-lang{
     position:absolute;
-    width: 700px;
+    width: 600px;
     top:30%;
     left:50%;
     transform:translate(-50%,-30%);
@@ -1022,7 +987,7 @@ a.btn {
 }
 
 .text-lang h2{
-    font-size:5.5rem;
+    font-size:4.5rem;
 }
 
 .text-lang h2::after{
@@ -1058,6 +1023,123 @@ a.btn {
 .media span:not(:last-child){
     margin-right: 1rem;
 }
+
+/* Media queries section 3 */
+@media screen and (max-width: 1450px){
+
+    .text-el h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-lang {
+        width: 600px;
+        left: 45%;
+    }
+
+    .text-lang h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1250px){
+
+    .text-lang {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .text-lang h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-lang {
+        top: 35%;
+        left: 30%;
+        width: 500px;
+    }
+
+    .text-el div {
+        top: 0%;
+        left: 0;
+        flex-direction: inherit;
+    }
+
+    .media {
+        bottom: 150px;
+        left: 4%;
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .text-lang {
+        line-height: 2rem;
+        top: 40%;
+        left: 37%;
+    }
+
+    .text-lang h2::after {
+        margin-top: 2rem;
+    }
+
+
+    .media {
+        bottom: 150px;
+        left: 5%;
+    }
+
+}
+
+@media screen and (max-width: 695px){
+
+    .text-el div {
+        line-height: 2rem;
+        top: 10%;
+        left: 0;
+    }
+
+    .text-lang {
+        top: 50%;
+        left: 40%;
+    }
+
+    .media {
+        bottom: 80px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .lang {
+        background: url(../resources/images/section3_background.png) no-repeat right/cover;
+    }
+    .text-lang {
+        top: 64%;
+        left: 50%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        top: 25%;
+    }
+
+    .media :not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+
+
+    
 
 /* --------Section 4- portfolio------- */
 .port{
@@ -1125,7 +1207,7 @@ a.btn {
 }
 
 .port-content .item .text p{
-    font-family: 'made_evolve_sans_evoregular';
+    font-family: var(--font-family-p);
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
@@ -1138,7 +1220,7 @@ a.btn {
     font-family: 'notableregular';
 }
 
-.port-content .item .text ul:nth-last-child(4){
+.port-content .item .text ul li:not(:last-child){
     margin-right: 1rem;
 }
 
@@ -1148,6 +1230,8 @@ a.btn {
     font-size: 1rem;
     display: block;
     text-transform: capitalize;
+    margin-bottom: 1rem;
+
 }
 
 .port-content .item .text a span i{
@@ -1160,5 +1244,46 @@ a.btn {
     transform: rotate(360deg);
 }
 
+/* Media queries section 4 */
+@media screen and (max-width: 1160px){
+    .port-content .item .text ul li{
+        font-size: 1.3rem;
+    }
+}
 
+@media screen and (max-width:980px){
+    .port-content .item .text ul li{
+        font-size: 1rem;
+    }
+    .port-content .item .text {
+        padding: 50px 21px 70px;
+    }
+}
 
+@media screen and (max-width:780px){
+
+    .port-content {
+        display: grid; 
+        grid-auto-flow: row dense; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "."
+          "."
+          "."
+          "."; 
+        width: 100%; 
+        height: 100%; 
+      }
+
+      .port-content .item {
+        height: max-content;
+    }
+
+    .port-content .item:hover {
+        width: 100%;
+    }
+}
