@@ -86,30 +86,30 @@ gsap.from(".bg-text h2", {
 });
 
 // --------------Animation section about--------------
-TweenMax.to(".about-content", 2, {
-    width: "100%",
-    ease: Expo.easeInOut
-})
-gsap.from('.about-title', 
-    {opacity: 0, duration: 2, delay: 1.5, y: 100}
-    )
-gsap.from('.about-img img', 
-    {opacity: 0, duration: 2, delay:1.5, y: -100}
-)
+// TweenMax.to(".about-content", 2, {
+//     width: "100%",
+//     ease: Expo.easeInOut
+// })
+// gsap.from('.about-title', 
+//     {opacity: 0, duration: 2, delay: 1.5, y: 100}
+//     )
+// gsap.from('.about-img img', 
+//     {opacity: 0, duration: 2, delay:1.5, y: -100}
+// )
 
-TweenMax.to(".about-secondary", 2.5, {
-    width: "100%",
-    ease: Expo.easeInOut}
-)
+// TweenMax.to(".about-secondary", 2.5, {
+//     width: "100%",
+//     ease: Expo.easeInOut}
+// )
 
-gsap.from('.about-scroll', 
-    {opacity: 0, duration: 3, x: -100}
-)
+// gsap.from('.about-scroll', 
+//     {opacity: 0, duration: 3, x: -100}
+// )
 
-gsap.from('.year', 
-    {opacity: -1, duration: 1.5, delay: 1.5, x: 100}
-)
+// gsap.from('.year', 
+//     {opacity: -1, duration: 1.5, delay: 1.5, x: 100}
+// )
 
-gsap.from('.button-sliding-to-left--black',
-    {opacity: -1, duration: 1.5, delay: 1.5, y: 100}
-)
+// gsap.from('.button-sliding-to-left--black',
+//     {opacity: -1, duration: 1.5, delay: 1.5, y: 100}
+// )
