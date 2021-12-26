@@ -35,6 +35,8 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
+gsap.registerPlugin(ScrollTrigger);
 // Animation navigation & hero section
 gsap.from(".logo", {
     opacity: 0, duration: 1, delay: 0.5, y: -10
@@ -86,30 +88,33 @@ gsap.from(".bg-text h2", {
 });
 
 // --------------Animation section about--------------
-// TweenMax.to(".about-content", 2, {
-//     width: "100%",
-//     ease: Expo.easeInOut
-// })
-// gsap.from('.about-title', 
-//     {opacity: 0, duration: 2, delay: 1.5, y: 100}
-//     )
-// gsap.from('.about-img img', 
-//     {opacity: 0, duration: 2, delay:1.5, y: -100}
-// )
+TweenMax.to(".about-main", 2, {
+    width: "100%",
+    ease: Expo.easeInOut
+})
+gsap.from('.about-primary h2', 
+    {opacity: 0, duration: 2, delay: 1.5, y: 100}
+    )
+gsap.from('.about-primary h2::after',
+    {opacity: 0, duration: 2, delay: 1.5, y: 100}
+    )
+gsap.from('.about-primary img', 
+    {opacity: 0, duration: 2, delay:1.5, y: -100}
+)
 
-// TweenMax.to(".about-secondary", 2.5, {
-//     width: "100%",
-//     ease: Expo.easeInOut}
-// )
+TweenMax.to(".about-secondary", 2.5, {
+    width: "100%",
+    ease: Expo.easeInOut}
+)
 
-// gsap.from('.about-scroll', 
-//     {opacity: 0, duration: 3, x: -100}
-// )
+gsap.from('.about-scroll', 
+    {opacity: 0, duration: 3, x: -100}
+)
 
-// gsap.from('.year', 
-//     {opacity: -1, duration: 1.5, delay: 1.5, x: 100}
-// )
+gsap.from('.about-text', 
+    {opacity: -1, duration: 1.5, delay: 1.5, x: 100}
+)
 
-// gsap.from('.button-sliding-to-left--black',
-//     {opacity: -1, duration: 1.5, delay: 1.5, y: 100}
-// )
+gsap.from('.about-text h3 p',
+    {opacity: -1, duration: 1.5, delay: 1.5, y: 100}
+)
