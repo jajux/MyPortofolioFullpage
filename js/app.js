@@ -71,21 +71,21 @@ gsap.from(".icons span", {
 });
 
 // Animation section competences
-gsap.from(".text-inner h4", {
-    opacity: 0, duration: 1, delay: 1.5, x: -50, stagger: 0.2,
-});
+// gsap.from(".text-inner h4", {
+//     opacity: 0, duration: 1, delay: 1.5, x: -50, stagger: 0.2,
+// });
 
-gsap.from(".text-inner h1", {
-    opacity: 0, duration: 1, delay: 1.5, y: -50, stagger: 0.2,
-})
+// gsap.from(".text-inner h1", {
+//     opacity: 0, duration: 1, delay: 1.5, y: -50, stagger: 0.2,
+// })
 
-gsap.from(".text-inner h6", {
-    opacity: 0, duration: 1, delay: 2, x: -50, stagger: 0.2,
-})
+// gsap.from(".text-inner h6", {
+//     opacity: 0, duration: 1, delay: 2, x: -50, stagger: 0.2,
+// })
 
-gsap.from(".bg-text h2", {
-    opacity: 0, duration: 1, delay: 2.5, x: -50, stagger: 0.2,
-});
+// gsap.from(".bg-text h2", {
+//     opacity: 0, duration: 1, delay: 2.5, x: -50, stagger: 0.2,
+// });
 
 // --------------Animation section about--------------
 TweenMax.to(".about-main", 2, {
@@ -118,3 +118,5 @@ gsap.from('.about-text',
 gsap.from('.about-text h3 p',
     {opacity: -1, duration: 1.5, delay: 1.5, y: 100}
 )
+
+// Animation section3
