@@ -127,9 +127,9 @@ a{
 }
 
 /* ----Put the navigation bar in the header---- */
-#fullpage{
+/* #fullpage{
     padding-top: 40px;
-}
+} */
 
 #navbar{
     position:sticky;
@@ -221,9 +221,9 @@ nav ul li a{
 
 @media only screen and (max-width: 1300px){
 
-    #fullpage{
+    /* #fullpage{
         padding-top: 30px;
-    }
+    } */
     .menu{
         position: fixed;
         top: 0;
@@ -1024,8 +1024,6 @@ nav ul li a{
     -webkit-animation: shadow-drop-tb 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-  
-
 .item-3 {
     grid-area: item-3; 
     margin-bottom: 90px;
@@ -1216,7 +1214,7 @@ nav ul li a{
 
 @media only screen and (max-width:425px){
     #section2{
-        height: 2000px !important;
+        height: 2060px !important;
     }
 
     .skills-main { 
@@ -1449,6 +1447,7 @@ nav ul li a{
 }
 
 .port-title h3{
+    display: flex;
     font-size: 16rem;
     font-family: 'notableregular';
     color: rgba(255, 255, 255, 0);
@@ -1480,6 +1479,300 @@ nav ul li a{
   
 
 /* -------------Media queries section4--- */
+@media only screen and (max-width:1440px){
+
+    .port-title-up h3{
+        justify-content: center;
+        font-size: 10rem;
+        letter-spacing: 3rem;
+    }
+
+    .port-title H3{
+        font-size: 10rem;
+        letter-spacing: 1rem;    
+    }
+
+    .port-content .item{
+        margin-top: 83px;    
+    }
+}
+
+@media only screen and (max-width:1200px){
+
+    .port-title-up{
+        background: linear-gradient( 
+            345deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
+    }
+
+    .port-title-up h3{
+        font-size: 9rem;
+        letter-spacing: 2rem;
+    }
+
+    .port-title{
+        bottom: 10%;
+    }
+
+    .port-title h3{
+        font-size: 8rem;
+        letter-spacing: 1rem;    
+    }
+}
+
+@media only screen and (max-width:1024px){
+
+    .port-title-up{
+        background: linear-gradient( 
+            343deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
+    }
+
+    .port-title-up h3{
+        justify-content: center;
+        font-size: 8rem;
+        letter-spacing: 2rem;
+    }
+
+    .port-title h3{
+        font-size: 7rem;
+        letter-spacing: 1rem;    
+    }
+}
+
+@media only screen and (max-width:980px){
+
+    .port-content {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "project1 project1 project2 project2"
+          "project3 project3 project4 project4"; 
+      }
+      
+      .project1 { grid-area: project1; }
+      
+      .project2 { grid-area: project2; }
+      
+      .project3 { 
+        grid-area: project3;
+        z-index: 100;
+     }
+      
+      .project4 { 
+        grid-area: project4;
+        z-index: 100;
+    }
+    
+    .port-content .item {
+        margin-top: 0px;
+    }
+
+    .port-content .item .text {
+        padding: 0px 50px 75px;
+        background-image: linear-gradient(to bottom, transparent, rgb(35 29 29 / 60%));
+    }
+
+    .port-content .item:hover {
+        width: 120%;
+    }
+
+    .port-content .item .text span {
+        color: var(--first-color);
+    }
+    .port-title-up h3{
+        font-size: 7rem;
+    }
+
+    .port-title h3{
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .port-title-up h3{
+        font-size: 5.8rem;
+    }
+
+    .port-title h3{
+        font-size: 4.8rem;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .port{
+        height: 1500px !important;
+    }
+
+
+    .port-content {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+          "project1"
+          "project2"
+          "project3"
+          "project4";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .port-content .item {
+        width: 50%;
+        overflow: hidden;
+        transition: all ease 1s;
+        margin-top: 306px;
+    }
+
+    .port-content .item:hover {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .port-content .item .text span {
+        font-size: 2.5rem;
+    }
+
+    .port-content .item .text a {
+        font-size: 2rem;
+        display:block;
+        width: 5%;
+    }
+
+    .text .text-inner {
+        width: 50%;
+    }
+
+    .port-title-up h3{
+        font-size: 5.5rem;
+    }
+
+    .port-title-up {
+        background: linear-gradient( 
+            360deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
+    }
+
+    .port-title h3{
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width:650px){
+
+    .port-content .item {
+        width: 70%;
+        margin-top: 300px;
+    }
+    .port-content .item .text span {
+        font-size: 2.5rem;
+    }
+
+    .port-content .item .text a {
+        font-size: 2rem;
+        display:block;
+        width: 5%;
+    }
+
+    .text .text-inner {
+        width: 50%;
+    }
+
+    .port-title-up h3{
+        font-size: 3.7rem;
+    }
+
+    .port-title-up h3 ._white{
+        color: var(--first-color);
+    }
+
+    .port-title-up {
+        background: linear-gradient( 
+            90deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
+    }
+
+    .port-title {
+        bottom: 5%;
+    }
+
+    .port-title h3{
+        font-size: 3.5rem;
+    }
+
+    .port-title h3 ._black{
+        color: var(--first-color);
+        -webkit-text-stroke: 1px var(--color-primary);
+       -moz-text-stroke: 1px var(--color-primary);
+       -o-text-stroke: 1px var(--color-primary);
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .port {
+        height: 1350px !important;
+    }
+
+    .port-content .item .text span {
+        font-size: 1.2rem;
+    }
+
+    .port-content .item .text a {
+        font-size: 1rem;
+        display:block;
+        width: 5%;
+    }
+
+    .port-title-up h3 {
+        font-size: 2.2rem;
+    }
+
+    .port-title h3 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media only screen and (max-width:425px){
+
+    .port {
+        height: 1350px !important;
+    }
+
+    .port-content .item .text span {
+        font-size: 1rem;
+    }
+
+    .text ul li {
+        font-size: 1rem;
+    }
+    .port-content .item .text p {
+        font-size: 1rem;
+    }
+
+    .port-content .item .text a {
+        font-size: 0.5rem;
+        display:block;
+        width: 5%;
+    }
+
+    .port-title-up h3 {
+        margin-left: 20px;
+        font-size: 2rem;
+    }
+
+    .port-title h3 {
+        font-size: 2rem;
+    }
+
+}
+
+
 
 
 /* ----------------section5 Contact------------------- */
