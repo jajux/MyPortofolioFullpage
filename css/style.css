@@ -87,7 +87,7 @@
 }
 
 #fp-nav ul li a span{
-    background: rgb(136, 137, 140);
+    background: var(--second-color);
     color:#080404;
 }
 
@@ -98,6 +98,8 @@ body{
     position: relative;
     z-index: 1;
     scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -329,6 +331,10 @@ nav ul li a{
     .nav-link:visited {
         font-size: 2rem;
     }
+
+    .logo h1{
+    font-size: 2rem;
+}
 }
 
 /* ------------------Header 👦-------------------*/
@@ -676,7 +682,7 @@ nav ul li a{
     display: block;
     width: 80%;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--second-color);
     position: absolute;
     top: 30%;
     left: 10%;
@@ -723,7 +729,7 @@ nav ul li a{
     display: block;
     width: 5%;
     height: 1px;
-    background-color: var(--color-secondary);
+    background-color: var(--second-color);
     position: initial;
     top: 25%;
     left: 0%;
@@ -770,7 +776,7 @@ nav ul li a{
     left: 0;
     width: 38px;
     height: 1px;
-    background-color: var(--color-primary);
+    background-color: var(--second-color);
     margin-left: -2.5rem;
 }
 
@@ -987,12 +993,14 @@ nav ul li a{
 }
 
 .skill-text p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 20px;
+    line-height: 1.8rem;
 }
 
 .skill-text a{
     margin-top: 20px;
+    color: var(--color-primary);
 }
 
 .btn {
@@ -1077,6 +1085,94 @@ nav ul li a{
     background: #7f6f62;
 }
 
+/* Media queries for the cards */
+
+@media only screen and (max-width: 1420px) {
+
+    .card-full {
+        width: 800px;
+    }
+}
+
+
+@media only screen and (max-width: 830px) {
+
+    .card-full {
+        width: 700px;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+
+    .card-full {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    .card-full {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .card-full {
+        width:400px;
+    }
+
+    .skill-text p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .skill-text p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 2rem !important;
+    }
+
+    .card-full {
+        width:300px;
+    }
+
+    .skill-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .skill-text p {
+        font-size: 1rem;
+        width: 330px;
+    }
+
+    .card-back span {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .card{
+        width: 280px;
+    }
+    .card-title {
+        font-size: 2.2rem !important;
+    }
+
+    .card-back span {
+        font-size: 1.2rem;
+    }
+}
+
+
 /* -------------------Section3 portfolio------------------------- */
 .port{
     position: relative;
@@ -1084,7 +1180,6 @@ nav ul li a{
     min-height: 100vh;
     z-index: 999;
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
 }
 
 .port-content{
@@ -1093,7 +1188,7 @@ nav ul li a{
     height: 100vh;
     align-content: center;
     align-items: center;
-    background: linear-gradient( 360deg, var(--color-primary) 50%, var(--first-color) 50%);
+    background: linear-gradient( 360deg, var(--first-color) 50%, var(--color-primary) 50%);
 
 }
 
@@ -1101,7 +1196,7 @@ nav ul li a{
     position: relative;
     overflow: hidden;
     transition: all ease 1s;
-    background: var(--first-color);
+    background: var(--color-primary);
 }
 
 .port-content .item img{
@@ -1111,7 +1206,7 @@ nav ul li a{
 }
 
 .port-content .item:hover{
-    width: 110%;
+    width: 200%;
 }
 
 .port-content .item .text{
@@ -1122,11 +1217,11 @@ nav ul li a{
     height: 100%;
     padding: 50px 50px 100px;
     color: var(--first-color);
-    background-image: linear-gradient(to bottom, transparent, rgba(0 0 0 / 40%));
+    background-image: linear-gradient(to top, transparent, var(--color-primary));
     display:flex;
     align-items: flex-end;
     opacity: 0;
-    transition: all ease 0.5s 0.2s;
+    transition: all ease 0.7s 0.4s;
 }
 
 .port-content .item:hover .text{
@@ -1140,12 +1235,15 @@ nav ul li a{
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    bottom: 50%;
+    left: 10%;
 }
 
 .number{
     font-size: 5rem;
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--second-color);
 }
 .port-content .item .text p{
     font-family: var(--font-family-p);
@@ -1165,24 +1263,8 @@ nav ul li a{
     margin-right: 1rem;
 }
 
-.port-content .item .text a{
-    color: var(--first-color);
-    font-size: 2rem;
-    display: block;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
-
-}
-
-/* .port-content .item .text  span a i{
-    font-size: 1.2rem;
-    display: inline-block;
-    transition: all ease 2s;
-    color: var(--color-primary);
-} */
-
-.port-content .item .text a:hover span i{
-    transform: rotate(360deg);
+.text .text-inner a{
+    color:var(--first-color)
 }
 
 .port-title-up{
@@ -1199,14 +1281,14 @@ nav ul li a{
     align-items: center;
     font-size: 10rem;
     letter-spacing: 2rem;
-    color:var(--first-color);
-    -webkit-text-stroke: 1px var(--color-primary);
-   -moz-text-stroke: 1px var(--color-primary);
-   -o-text-stroke: 1px var(--color-primary);
+    color:var(--color-primary);
+    -webkit-text-stroke: 1px var(--first-color );
+   -moz-text-stroke: 1px var(--first-color );
+   -o-text-stroke: 1px var(--first-color );
     -webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     align-content: center;
-    text-decoration: overline  0.1rem solid var(--color-secondary);
+    text-decoration: overline  0.1rem solid var(--second-color);
 
 }
 
@@ -1248,20 +1330,14 @@ nav ul li a{
 .port-title h3{
     display: flex;
     font-size: 10rem;
-    color: var(--color-primary);
-    -webkit-text-stroke: 1px var(--first-color);
-   -moz-text-stroke: 1px var(--first-color);
-   -o-text-stroke: 1px var(--first-color);
+    color: var(--first-color);
+    -webkit-text-stroke: 1px var(--color-primary);
+   -moz-text-stroke: 1px var(--color-primary);
+   -o-text-stroke: 1px var(--color-primary);
    letter-spacing: 1rem;
    -webkit-animation: portfolio 6.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
    animation: portfolio 6.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-
-.port-title h3:hover{
-    text-decoration: overline underline 0.1rem solid var(--first-color);
-
-}
-
 
   @keyframes portfolio {
     0% {
@@ -1281,7 +1357,7 @@ nav ul li a{
   }
   
 
-/* -------------Media queries section4--- */
+/* -------------Media queries section4 Portfol--- */
 @media only screen and (max-width:1440px){
 
     .port-title-up h3{
@@ -1295,27 +1371,18 @@ nav ul li a{
         letter-spacing: 1rem;    
     }
 
-    .port-content .item{
-        margin-top: 83px;    
+    .item .text .text-inner{
+        bottom: 20%;
     }
+
 }
 
 @media only screen and (max-width:1200px){
-
-    .port-title-up{
-        background: linear-gradient( 
-            345deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
-    }
 
     .port-title-up h3{
         font-size: 9rem;
         letter-spacing: 2rem;
     }
-
-    .port-title{
-        bottom: 10%;
-    }
-
     .port-title h3{
         font-size: 8rem;
         letter-spacing: 1rem;    
@@ -1324,11 +1391,6 @@ nav ul li a{
 
 @media only screen and (max-width:1024px){
 
-    .port-title-up{
-        background: linear-gradient( 
-            343deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
-    }
-
     .port-title-up h3{
         justify-content: center;
         font-size: 8rem;
@@ -1340,270 +1402,6 @@ nav ul li a{
         letter-spacing: 1rem;    
     }
 }
-
-@media only screen and (max-width:980px){
-
-    .port-content {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "project1 project1 project2 project2"
-          "project3 project3 project3 project3"; 
-      }
-      
-      .project1 { grid-area: project1; }
-      
-      .project2 { grid-area: project2; }
-      
-      .project3 { 
-        grid-area: project3;
-        z-index: 100;
-     }
-
-    .port-content .item {
-        margin-top: 0px;
-    }
-
-    .port-content .item .text {
-        padding: 0px 50px 75px;
-        background-image: linear-gradient(to bottom, transparent, rgb(35 29 29 / 60%));
-    }
-
-    .port-content .item:hover {
-        width: 120%;
-    }
-
-    .port-content .item .text span {
-        color: var(--first-color);
-    }
-    .port-title-up h3{
-        font-size: 7rem;
-    }
-
-    .port-title h3{
-        font-size: 6rem;
-    }
-}
-
-@media only screen and (max-width:850px){
-    .port-title-up h3{
-        font-size: 5.8rem;
-    }
-
-    .port-title h3{
-        font-size: 4.8rem;
-    }
-}
-
-@media only screen and (max-width:768px){
-
-    .port{
-        height: 1500px !important;
-    }
-
-
-    .port-content {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 1fr ; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        grid-template-areas: 
-          "project1"
-          "project2"
-          "project3";
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-    }
-
-    .port-content .item {
-        width: 50%;
-        overflow: hidden;
-        transition: all ease 1s;
-        margin-top: 306px;
-    }
-
-    .port-content .item:hover {
-        width: 100%;
-        z-index: 100;
-    }
-
-    .port-content .item .text span {
-        font-size: 2.5rem;
-    }
-
-    .port-content .item .text a {
-        font-size: 2rem;
-        display:block;
-        width: 5%;
-    }
-
-    .text .text-inner {
-        width: 50%;
-    }
-
-    .port-title-up h3{
-        font-size: 5.5rem;
-    }
-
-    .port-title-up {
-        background: linear-gradient( 
-            360deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
-    }
-
-    .port-title h3{
-        font-size: 4.5rem;
-    }
-}
-
-@media only screen and (max-width:650px){
-
-    .port-content .item {
-        width: 70%;
-        margin-top: 300px;
-    }
-    .port-content .item .text span {
-        font-size: 2.5rem;
-    }
-
-    .port-content .item .text a {
-        font-size: 2rem;
-        display:block;
-        width: 5%;
-    }
-
-    .text .text-inner {
-        width: 50%;
-    }
-
-    .port-title-up h3{
-        font-size: 3.7rem;
-    }
-
-    .port-title-up h3 ._white{
-        color: var(--first-color);
-    }
-
-    .port-title-up {
-        background: linear-gradient( 
-            90deg, rgba(0,0,0,1) 50%, rgba(220,217,212,1) 50%);
-    }
-
-    .port-title {
-        bottom: 5%;
-    }
-
-    .port-title h3{
-        font-size: 3.5rem;
-    }
-
-    .port-title h3 ._black{
-        color: var(--first-color);
-        -webkit-text-stroke: 1px var(--color-primary);
-       -moz-text-stroke: 1px var(--color-primary);
-       -o-text-stroke: 1px var(--color-primary);
-    }
-}
-
-@media only screen and (max-width:500px){
-
-    .port {
-        height: 1350px !important;
-    }
-
-    .port-content .item .text span {
-        font-size: 1.2rem;
-    }
-
-    .port-content .item .text a {
-        font-size: 1rem;
-        display:block;
-        width: 5%;
-    }
-
-    .port-title-up h3 {
-        font-size: 2.2rem;
-    }
-
-    .port-title h3 {
-        font-size: 2.2rem;
-    }
-
-}
-
-@media only screen and (max-width:425px){
-
-    .port {
-        height: 1350px !important;
-    }
-
-    .port-content .item .text span {
-        font-size: 1rem;
-    }
-
-    .text ul li {
-        font-size: 1rem;
-    }
-
-    .port-content .item .text {
-        padding: 0px 50px 40px;
-    }
-
-    .port-content .item .text p {
-        font-size: 1rem;
-    }
-
-    .port-content .item .text a {
-        font-size: 0.5rem;
-        display:block;
-        width: 5%;
-    }
-
-    .port-title-up h3 {
-        margin-left: 20px;
-        font-size: 2rem;
-    }
-
-    .port-title h3 {
-        font-size: 2rem;
-    }
-
-}
-
-@media only screen and (max-width:375px){
-
-    .port-content .item .text {
-        padding: 0px 50px 10px;
-    }
-}
-
-@media only screen and (max-width:320px){
-
-    .port-content .item {
-        width: 100%;
-        margin-top: 288px;
-    }
-
-    .port-content .item:hover {
-        width: 123%;
-    }
-
-    .port-content .item .text {
-        padding: 0px 50px 30px;
-    }
-
-    .port-title h3 {
-        font-size: 1.2rem;
-    }
-
-}
-
-
-
 
 /* ----------------section4 Contact------------------- */
 
@@ -1643,22 +1441,25 @@ nav ul li a{
 
 .contact-title { 
       grid-area: contact-title; 
-      text-align: center;
 }
 
 .contact-title h2{
-    text-align: -webkit-center;
-    font-size: 9rem;
+    text-align: center;
+    margin: auto;
+    font-size: 5rem;
     letter-spacing: 3rem;
     color: var(--first-color);
 }
 
 .contact-title h2::after{
     content: "";
-    width: 30%;
+    width: 20%;
     height: 2px;
     background: var(--second-color);
     display: block;
+    text-align: center;
+    margin: auto;
+
 }
 
 .contact-content { 
@@ -1667,7 +1468,7 @@ nav ul li a{
 
 .contact-content h3{
     text-align: -webkit-left;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.6rem;
     text-transform: none;
     padding: 10px 0px;
@@ -1679,10 +1480,11 @@ nav ul li a{
     display: block;
     background: var(--second-color);
     height: 1px;
+    margin-bottom: 10px;
 }
 
 .contact-content p{
-    line-height: 3rem;
+    font-size: 1.3rem;
 }
 
   
@@ -1700,8 +1502,8 @@ address{
 
 .italic{
     font-style: italic;
-    font-size: smaller;
-    margin-left: 20px;
+    font-size: small;
+    margin-left: 50px;
 }
   
   .email { 
@@ -1711,7 +1513,7 @@ address{
 .fa-street-view,
 .fa-mobile,
 .fa-at{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-right: 20px;
 }
 
@@ -1734,7 +1536,7 @@ address{
     justify-content: space-evenly;
 }
 
-.social a{
+.social a i{
     color: var(--first-color);
 }
   
@@ -1749,15 +1551,16 @@ address{
  @media only screen and (max-width: 1300px){
 
 .contact-title h2 {
-        font-size: 6rem;
+        font-size: 4rem;
 }
 
 .contact-content h3 {
+    text-align: left;
     font-size: 2rem;
 }
 
 .contact-content p {
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: justify;
 }
 
