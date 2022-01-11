@@ -120,3 +120,9 @@ gsap.from('.about-text h3 p',
 )
 
 // Animation section3
+
+
+// Copyright date
+const yearSpan = document.querySelector('#currentYear');
+const currentYear = new Date();
+yearSpan.innerText = currentYear.getFullYear();
